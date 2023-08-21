@@ -4,7 +4,10 @@ import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.layout.AnchorPane;
+import javafx.scene.layout.Background;
+import javafx.scene.paint.Color;
 import javafx.stage.Stage;
+import javafx.stage.StageStyle;
 
 public class AppInitializer extends Application {
 
@@ -14,10 +17,15 @@ public class AppInitializer extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception{
-        AnchorPane root = FXMLLoader.load(getClass().getResource("/view/MainForm.fxml"));
-        Scene mainscene = new Scene(root);
-        primaryStage.setScene(mainscene);
-        primaryStage.setTitle("Personal Application");
+        AnchorPane root = FXMLLoader.load(getClass().getResource("/view/HTMLEditor.fxml"));
+        Scene mainScene = new Scene(root);
+        primaryStage.setScene(mainScene);
+        primaryStage.setTitle("Undecorated Window");
+
+//        primaryStage.initStyle(StageStyle.TRANSPARENT);
+//        root.setBackground(Background.fill(Color.TRANSPARENT));
+//        mainScene.setFill(Color.TRANSPARENT);
+
         primaryStage.centerOnScreen();
         primaryStage.show();
 
