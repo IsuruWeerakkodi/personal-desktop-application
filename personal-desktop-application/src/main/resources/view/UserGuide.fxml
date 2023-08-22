@@ -1,14 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="lk.ijse.dep11.UserGuideController"
-            prefHeight="400.0" prefWidth="600.0">
 
+<AnchorPane fx:id="userGuideRoot" prefHeight="400.0" prefWidth="395.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.dep11.UserGuideController">
+   <children>
+      <Label alignment="TOP_CENTER" layoutX="250.0" layoutY="14.0" style="-fx-background-color: lightred;" text="User Guide" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextArea editable="false" layoutX="14.0" layoutY="35.0" prefHeight="351.0" prefWidth="375.0" text="1. Installation&#10;Download the TextEditor App package for Ubuntu&#10; from the provided source.&#10;&#10;Extract the package to your preferred directory.&#10;&#10;Open the terminal and navigate to the extracted &#10;directory.&#10;&#10;2. Getting Started&#10;Upon launching the TextEditor app, you'll be &#10;presented with a simple and intuitive interface. &#10;Here's an overview of the key components:&#10;Menu Bar: Contains various options for file &#10;operations, editing, and customization.&#10;Toolbar: Provides quick access to frequently used &#10;functions like opening, saving, and formatting.&#10;Text Area: The main area where you can type and &#10;edit your text.&#10;Status Bar: Displays information about the current &#10;file, such as character count and cursor position.&#10;&#10;3. Text Editing&#10;Editing text in the TextEditor app is straightforward.&#10;To type or edit text, simply click on the text area &#10;and start typing.&#10;Use the keyboard and mouse to navigate and &#10;select text.&#10;Basic text formatting (bold, italic, underline) can &#10;be applied using the options in the &quot;Format&quot; menu.&#10;4. File Operations&#10;The TextEditor app supports common file &#10;operations:&#10;&#10;New: Create a new, empty document.&#10;Open: Load an existing text file into the editor.&#10;Save: Save the current document to the file.&#10;Save As: Save the current document with a &#10;different name or location.&#10;Exit: Close the application.&#10;5. Keyboard Shortcuts&#10;The TextEditor app includes useful keyboard &#10;shortcuts to enhance your productivity:&#10;&#10;Ctrl + N: New document&#10;Ctrl + O: Open document&#10;Ctrl + S: Save document&#10;Ctrl + Shift + S: Save document as&#10;Ctrl + Z: Undo&#10;Ctrl + Y: Redo&#10;Ctrl + C: Copy selected text&#10;Ctrl + X: Cut selected text&#10;Ctrl + V: Paste copied/cut text&#10;&#10;6. Customization Options&#10;The app allows you to customize certain aspects of &#10;the user experience:&#10;Font Settings: Adjust the font family, size, and style &#10;of the text.&#10;Theme: Choose between light and dark themes for &#10;the app interface.&#10;Auto Save: Enable or disable auto-saving of the &#10;document at regular intervals.&#10;&#10;7. Troubleshooting&#10;If you encounter any issues while using the &#10;TextEditor Pro, consider the following:&#10;Crashes: Restart the application and try again.&#10;File Not Opening: Ensure the file is in a supported &#10;format (e.g., .txt).&#10;Unresponsive Interface: Check system resources &#10;and restart the app if needed.&#10;8. Contact and Support&#10;If you need further assistance, have suggestions, &#10;or encounter any bugs, please reach out to our &#10;support team at support@example.com.&#10;&#10;&#10;Thank you for choosing the TextEditor App! &#10;We hope it enhances your text editing experience &#10;on Ubuntu.&#10;&#10;" />
+   </children>
 </AnchorPane>
